@@ -28,7 +28,7 @@ jobs:
                   cache: 'npm'
             - run: npm ci
             - run: npm run lint
-            - run: npm run prettier:fix
+            - run: npm run prettier
     test:
         runs-on: ubuntu-latest
         needs: [install]

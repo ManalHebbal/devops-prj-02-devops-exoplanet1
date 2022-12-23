@@ -5,7 +5,11 @@
     "scripts": {
         "start": "node app.js",
         "prettier": "prettier --check .",
-        "prettier:fix": "prettier --write ."
+        "prettier:fix": "prettier --write .",
+        "lint": "eslint .",
+        "lint:fix": "eslint --fix .",
+        "code:fix": "prettier --write . && eslint --fix .",
+        "commit": "cz"
     },
     "dependencies": {
         "cookie-parser": "~1.4.4",
